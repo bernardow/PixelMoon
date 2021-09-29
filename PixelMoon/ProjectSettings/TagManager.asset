@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Stair
   - Item
+  - Crate
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - 
   - FOW Main
   - FOW Secondary
-  - 
-  - 
+  - Player
+  - Trigger Zone
   - 
   - 
   - 

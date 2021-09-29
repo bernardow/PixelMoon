@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class MedicKit : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Player pl = null;
+    private int maxLife = 3;
 
+    
     // Update is called once per frame
     void Update()
     {
-        
+        UseMedic();
+    }
+
+    private void UseMedic()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if(pl.vida < maxLife)
+            {
+                pl.vida++;
+                Destroy(gameObject);
+            }
+            
+        }
     }
 }

@@ -69,6 +69,9 @@ public class Inventory : MonoBehaviour
 
     private void InventoryMaster()
     {
+        
+
+
         if (pl.InventoryCheck().Count > 0 && pl.InventoryCheck().Count < 2)
         {
             var _item1 = pl.InventoryCheck()[0];

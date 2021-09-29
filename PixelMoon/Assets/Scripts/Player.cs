@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Sprite crouchedSprite;
     [SerializeField] private Sprite standSprite;
     [SerializeField] private GameObject head = null;
+    [SerializeField] private LayerMask mask;
     private CircleCollider2D cc = null;
     private SpriteRenderer sr = null;
     public bool slowDebuff = false;
@@ -25,7 +26,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform gdCP = null;
 
     [Header("Propriedades da Vida")]
-    [SerializeField] private int vida = 3;
+    public int vida = 3;
 
     [Header("Inventário")]
     [SerializeField] private List<string> inventory;
@@ -74,7 +75,7 @@ public class Player : MonoBehaviour
         // Jump
         if (timeSinceLastJump >= timer)
         {
-            if (Jump(0.2f) == true && Input.GetKey(KeyCode.Space))
+            if (Jump(0.4f) == true && Input.GetKey(KeyCode.Space))
             {
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 timeSinceLastJump = 0;
@@ -111,11 +112,11 @@ public class Player : MonoBehaviour
 
         Vector2 endPos = feetCastPoint.position + Vector3.down * castDist;
 
-        RaycastHit2D hit = Physics2D.Linecast(feetCastPoint.position, endPos);
+        RaycastHit2D hit = Physics2D.Linecast(feetCastPoint.position, endPos, mask);
 
         if (hit.collider != null)
         {
-            if (hit.collider.gameObject.CompareTag("Ground"))
+            if (hit.collider.gameObject.CompareTag("Ground") || hit.collider.gameObject.CompareTag("Crate"))
             {
                 canJump = true;
             }
@@ -236,19 +237,31 @@ public class Player : MonoBehaviour
                 
             }else if (item == "medic")
             {
-                medicKitPrefab.GetComponent<Transform>().position = armPrefab.GetComponent<Transform>().position;
-
-                if (inv.select1 && InventoryCheck()[0] == "medic")
+                if(medicKitPrefab != null)
                 {
-                    medicKitPrefab.SetActive(true);
-                }
-                else if (inv.select2 && InventoryCheck()[1] == "medic")
+                    medicKitPrefab.GetComponent<Transform>().position = armPrefab.GetComponent<Transform>().position;
+
+                    if (inv.select1 && InventoryCheck()[0] == "medic")
+                    {
+                        medicKitPrefab.SetActive(true);
+                    }
+                    else if (inv.select2 && InventoryCheck()[1] == "medic")
+                    {
+                        medicKitPrefab.SetActive(true);
+                    }
+                    else medicKitPrefab.SetActive(false);
+
+                }else if(medicKitPrefab == null)
                 {
-                    medicKitPrefab.SetActive(true);
+                    if(InventoryCheck()[0] == "medic")
+                    {
+                        inventory.Remove(inventory[0]);
+                    }
+                    else if(InventoryCheck()[1] == "medic")
+                    {
+                        inventory.Remove(inventory[1]);
+                    }
                 }
-                else medicKitPrefab.SetActive(false);
-
-
             }
 
         }
