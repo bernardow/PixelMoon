@@ -11,7 +11,7 @@ public class Stairs : MonoBehaviour
     public bool onStair = false;
     public bool canGoUp = false;
 
-    private void Start()
+    private void Awake()
     {
         pl = FindObjectOfType<Player>();
     }

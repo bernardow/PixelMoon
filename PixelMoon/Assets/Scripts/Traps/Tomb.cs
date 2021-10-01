@@ -17,6 +17,7 @@ public class Tomb : MonoBehaviour
     void Start()
     {
         cc = GetComponent<CircleCollider2D>();
+        player = FindObjectOfType<Player>().transform;   
     }
 
     // Update is called once per frame

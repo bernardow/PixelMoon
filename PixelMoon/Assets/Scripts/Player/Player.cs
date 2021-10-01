@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
     [Header("Inventário")]
     [SerializeField] private List<string> inventory;
     [SerializeField] private GameObject lampPrefab = null;
+    [SerializeField] private Transform lampEdge = null;
     [SerializeField] private GameObject medicKitPrefab = null;
     [SerializeField] private Inventory inv;
     [SerializeField] private GameObject armPrefab;
@@ -37,7 +38,6 @@ public class Player : MonoBehaviour
     public string actSlot = null;
     private float inventoryTimer = 1f;
     private float timeSinceLastCath;
-
     private float timeSinceLastJump = 0f;
     private Rigidbody2D rb;
 
@@ -160,45 +160,50 @@ public class Player : MonoBehaviour
     {
         if(st != null)
         {
-            if (st.canGoUp && Input.GetKey(KeyCode.W))
+            foreach(Stairs stair in st)
             {
-                st.onStair = true;
-                transform.position = new Vector3(st.transform.position.x, transform.localPosition.y, 0);
 
-                transform.position += new Vector3(0, 1, 0) * 3 * Time.fixedDeltaTime;
-                rb.gravityScale = 0;
-
-            }
-            if (st.canGoUp && Input.GetKey(KeyCode.S))
-            {
-                st.onStair = true;
-
-                rb.gravityScale = 0;
-                transform.position = new Vector3(st.transform.position.x, transform.localPosition.y, 0);
-                transform.position += new Vector3(0, -1, 0) * 3 * Time.fixedDeltaTime;
-            }
-
-            if (transform.position.x != st.transform.position.x)
-            {
-                st.onStair = false;
-            }
-
-
-            if (!st.onStair)
-            {
-                rb.gravityScale = 4;
-            }
-            else if (st.onStair)
-            {
-                rb.velocity = Vector2.zero;
-                speed = 0f;
-                if (Input.GetKeyDown(KeyCode.Space))
+                if (stair.canGoUp && Input.GetKey(KeyCode.W))
                 {
-                    st.onStair = false;
-                    rb.AddForce(Vector2.up * jumpForce / 2, ForceMode2D.Impulse);
-                    timeSinceLastJump = 0;
+                    stair.onStair = true;
+                    transform.position = new Vector3(stair.transform.position.x, transform.localPosition.y, 0);
+
+                    transform.position += new Vector3(0, 1, 0) * 3 * Time.fixedDeltaTime;
+                    rb.gravityScale = 0;
+
+                }
+                if (stair.canGoUp && Input.GetKey(KeyCode.S))
+                {
+                    stair.onStair = true;
+
+                    rb.gravityScale = 0;
+                    transform.position = new Vector3(stair.transform.position.x, transform.localPosition.y, 0);
+                    transform.position += new Vector3(0, -1, 0) * 3 * Time.fixedDeltaTime;
+                }
+
+                if (transform.position.x != stair.transform.position.x)
+                {
+                    stair.onStair = false;
+                }
+
+
+                if (!stair.onStair)
+                {
+                    rb.gravityScale = 4;
+                }
+                else if (stair.onStair)
+                {
+                    rb.velocity = Vector2.zero;
+                    speed = 0f;
+                    if (Input.GetKeyDown(KeyCode.Space))
+                    {
+                        stair.onStair = false;
+                        rb.AddForce(Vector2.up * jumpForce / 2, ForceMode2D.Impulse);
+                        timeSinceLastJump = 0;
+                    }
                 }
             }
+
         }
         
     }
@@ -228,7 +233,7 @@ public class Player : MonoBehaviour
         {
             if(item == "lamp")
             {
-                lampPrefab.GetComponent<Transform>().position = armPrefab.GetComponent<Transform>().position;
+                lampEdge.position = armPrefab.GetComponent<Transform>().position;
 
                 if (inv.select1 && InventoryCheck()[0] == "lamp")
                 {

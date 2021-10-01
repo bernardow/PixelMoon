@@ -6,6 +6,7 @@ public class Lighter : MonoBehaviour
 {
     [SerializeField] private Transform castPoint = null;
     [SerializeField] private LayerMask mask;
+    [SerializeField] private float range = 0f;
     private Rigidbody2D rb;
 
     // Start is called before the first frame update
@@ -17,7 +18,7 @@ public class Lighter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Falling(3f))
+        if (Falling(range))
         {
             rb.bodyType = RigidbodyType2D.Dynamic;
         }

@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private Player pl;
     [SerializeField] private GameObject fow;
+    [SerializeField] private GameObject fowCamera = null;
+    [SerializeField] private Transform canvasPosition = null;
     public bool inDark = false;
 
     // Start is called before the first frame update
@@ -18,6 +20,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         FOW();
+        //fowCamera.transform.position = canvasPosition.position;
 
     }
 
