@@ -84,8 +84,8 @@ public class Inventory : MonoBehaviour
                 slot1.GetComponent<Image>().sprite = md.spr;
             }
 
-            if(pl.removed && pl.actSlot == "1")
-                slot1.GetComponent<Image>().sprite = null;
+            if (pl.removed && pl.actSlot == "1")
+                slot1.SetActive(false);
         }
         else if (pl.InventoryCheck().Count > 1 && pl.InventoryCheck().Count < 3)
         {
@@ -99,8 +99,8 @@ public class Inventory : MonoBehaviour
             {
                 slot2.GetComponent<Image>().sprite = md.spr;
             }
-            if(pl.removed && pl.actSlot == "2")
-                slot2.GetComponent<Image>().sprite = null;
+            if (pl.removed && pl.actSlot == "2")
+                slot2.SetActive(false);
 
         }
     }

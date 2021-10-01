@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     public bool crouched = false;
 
     [Header("Referencias")]
-    [SerializeField] private Stairs st = null;
+    [SerializeField] private List<Stairs> st = null;
     [SerializeField] private Transform gdCP = null;
 
     [Header("Propriedades da Vida")]
@@ -47,6 +47,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         cc = GetComponent<CircleCollider2D>();
         sr = GetComponent<SpriteRenderer>();
+        st.Add(FindObjectOfType<Stairs>());
 
         crouchSpeed = 500;
     }
@@ -157,45 +158,49 @@ public class Player : MonoBehaviour
 
     private void Stairs()
     {
-        if (st.canGoUp && Input.GetKey(KeyCode.W))
+        if(st != null)
         {
-            st.onStair = true;
-            transform.position = new Vector3(st.transform.position.x, transform.localPosition.y, 0);
+            if (st.canGoUp && Input.GetKey(KeyCode.W))
+            {
+                st.onStair = true;
+                transform.position = new Vector3(st.transform.position.x, transform.localPosition.y, 0);
 
-            transform.position += new Vector3(0, 1, 0) * 3 * Time.fixedDeltaTime;
-            rb.gravityScale = 0;
+                transform.position += new Vector3(0, 1, 0) * 3 * Time.fixedDeltaTime;
+                rb.gravityScale = 0;
 
-        }
-        if (st.canGoUp && Input.GetKey(KeyCode.S))
-        {
-            st.onStair = true;
+            }
+            if (st.canGoUp && Input.GetKey(KeyCode.S))
+            {
+                st.onStair = true;
 
-            rb.gravityScale = 0;
-            transform.position = new Vector3(st.transform.position.x, transform.localPosition.y, 0);
-            transform.position += new Vector3(0, -1, 0) * 3 * Time.fixedDeltaTime;
-        }
+                rb.gravityScale = 0;
+                transform.position = new Vector3(st.transform.position.x, transform.localPosition.y, 0);
+                transform.position += new Vector3(0, -1, 0) * 3 * Time.fixedDeltaTime;
+            }
 
-        if (transform.position.x != st.transform.position.x)
-        {
-            st.onStair = false;
-        }
-
-
-        if (!st.onStair)
-        {
-            rb.gravityScale = 4;
-        }
-        else if (st.onStair)
-        {
-            rb.velocity = Vector2.zero;
-            speed = 0f;
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (transform.position.x != st.transform.position.x)
             {
                 st.onStair = false;
-                rb.AddForce(Vector2.up * jumpForce / 2, ForceMode2D.Impulse);
-                timeSinceLastJump = 0;
+            }
+
+
+            if (!st.onStair)
+            {
+                rb.gravityScale = 4;
+            }
+            else if (st.onStair)
+            {
+                rb.velocity = Vector2.zero;
+                speed = 0f;
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    st.onStair = false;
+                    rb.AddForce(Vector2.up * jumpForce / 2, ForceMode2D.Impulse);
+                    timeSinceLastJump = 0;
+                }
             }
         }
+        
     }
 
     private void OnTriggerStay2D(Collider2D collision)

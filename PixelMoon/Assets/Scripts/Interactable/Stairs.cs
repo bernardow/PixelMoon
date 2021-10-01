@@ -10,7 +10,12 @@ public class Stairs : MonoBehaviour
 
     public bool onStair = false;
     public bool canGoUp = false;
-   
+
+    private void Start()
+    {
+        pl = FindObjectOfType<Player>();
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

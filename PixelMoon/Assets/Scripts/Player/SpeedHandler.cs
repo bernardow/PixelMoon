@@ -5,19 +5,20 @@ using UnityEngine;
 public class SpeedHandler : MonoBehaviour
 {
     [SerializeField] private Player pl;
+    [SerializeField] private Lamp lp;
     [SerializeField] private GameManager gm;
 
     void Update()
     {
-        if ((!gm.inDark && pl.crouched) || (gm.inDark && !pl.crouched))
+        if ((lp.inLight && pl.crouched) || (!lp.inLight && !pl.crouched))
         {
             pl.speed = 500f;
         }
-        else if(gm.inDark && pl.crouched)
+        else if(!lp.inLight && pl.crouched)
         {
             pl.speed = 400f;
         }
-        else if (!gm.inDark && (!pl.crouched || gm.inDark))
+        else if (lp.inLight && (!pl.crouched || !lp.inLight))
         {
             pl.speed = 1000f;
         }

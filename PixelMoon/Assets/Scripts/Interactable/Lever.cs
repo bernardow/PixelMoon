@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Lever : MonoBehaviour
 {
-
+    [SerializeField] private float deactiveRotation;
+    [SerializeField] private float activeRotation;
     private bool canPress = false;
     public bool activated = false;
     public float timer = 5f;
@@ -25,13 +26,13 @@ public class Lever : MonoBehaviour
         {
             activated = true;
             activateTimer = true;
-            transform.rotation = Quaternion.Euler(0f, 0f, -13f);
+            transform.rotation = Quaternion.Euler(0f, 0f, activeRotation);
         } else if(timeSinceActivated >= timer)
         {
             activated = false;
             activateTimer = false;
             timeSinceActivated = 0f;
-            transform.rotation = Quaternion.Euler(0f, 0f, 13f);
+            transform.rotation = Quaternion.Euler(0f, 0f, deactiveRotation);
         }
     }
 
