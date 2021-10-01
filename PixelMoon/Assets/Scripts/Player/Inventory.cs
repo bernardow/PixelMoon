@@ -33,8 +33,7 @@ public class Inventory : MonoBehaviour
     }
 
     void Update()
-    {
-        
+    { 
 
         NumberSelect();
         InventoryMaster();
@@ -80,10 +79,13 @@ public class Inventory : MonoBehaviour
             {
                 slot1.GetComponent<Image>().sprite = lp.spr;
             }
-            else if (_item1 == md.name)
+            else if (_item1 == md.name && _item1 != null)
             {
                 slot1.GetComponent<Image>().sprite = md.spr;
             }
+
+            if(pl.removed && pl.actSlot == "1")
+                slot1.GetComponent<Image>().sprite = null;
         }
         else if (pl.InventoryCheck().Count > 1 && pl.InventoryCheck().Count < 3)
         {
@@ -93,14 +95,13 @@ public class Inventory : MonoBehaviour
             {
                 slot2.GetComponent<Image>().sprite = lp.spr;
             }
-            else if (_item2 == md.name)
+            else if (_item2 == md.name && _item2 != null)
             {
                 slot2.GetComponent<Image>().sprite = md.spr;
             }
+            if(pl.removed && pl.actSlot == "2")
+                slot2.GetComponent<Image>().sprite = null;
+
         }
-
-        
-
-        
     }
 }

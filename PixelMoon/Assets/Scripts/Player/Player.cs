@@ -22,7 +22,6 @@ public class Player : MonoBehaviour
 
     [Header("Referencias")]
     [SerializeField] private Stairs st = null;
-    [SerializeField] private Ground gd = null;
     [SerializeField] private Transform gdCP = null;
 
     [Header("Propriedades da Vida")]
@@ -34,6 +33,8 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject medicKitPrefab = null;
     [SerializeField] private Inventory inv;
     [SerializeField] private GameObject armPrefab;
+    public bool removed = false;
+    public string actSlot = null;
     private float inventoryTimer = 1f;
     private float timeSinceLastCath;
 
@@ -253,14 +254,24 @@ public class Player : MonoBehaviour
 
                 }else if(medicKitPrefab == null)
                 {
-                    if(InventoryCheck()[0] == "medic")
+                    if (InventoryCheck()[0] == "medic")
                     {
                         inventory.Remove(inventory[0]);
+                        removed = true;
+                        actSlot = "1";
                     }
-                    else if(InventoryCheck()[1] == "medic")
+                    else if (InventoryCheck()[1] == "medic")
                     {
                         inventory.Remove(inventory[1]);
+                        removed = true;
+                        actSlot = "2";
                     }
+                    else
+                    {
+                        removed = false;
+                        actSlot = null;
+                    }
+                    
                 }
             }
 
@@ -283,5 +294,14 @@ public class Player : MonoBehaviour
             Time.timeScale = 0;
         }
         else Time.timeScale = 1;
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Damage Trap"))
+        {
+            vida--;
+        }
     }
 }
