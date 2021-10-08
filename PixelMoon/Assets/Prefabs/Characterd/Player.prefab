@@ -329,17 +329,23 @@ MonoBehaviour:
   crouchedSprite: {fileID: 21300000, guid: bf5b72f46175afd45800561f57a80ee1, type: 3}
   standSprite: {fileID: 21300000, guid: 49cba94c95f2d24489f59201fd7a1fe1, type: 3}
   head: {fileID: 766423797198712637}
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
   slowDebuff: 0
   crouched: 0
-  st: {fileID: 0}
-  gd: {fileID: 0}
+  st:
+  - {fileID: 0}
   gdCP: {fileID: 0}
   vida: 3
   inventory: []
   lampPrefab: {fileID: 0}
+  lampEdge: {fileID: 0}
   medicKitPrefab: {fileID: 0}
   inv: {fileID: 0}
   armPrefab: {fileID: 766423797778948845}
+  removed: 0
+  actSlot: 
 --- !u!58 &766423798154383412
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -369,6 +375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pl: {fileID: 766423798154383419}
+  lp: {fileID: 0}
   gm: {fileID: 0}
 --- !u!1 &766423798533969710
 GameObject:
