@@ -7,7 +7,7 @@ public class Aim : MonoBehaviour
     [Header("Aim")]
     [SerializeField] private Camera cam = null;
     [SerializeField] private GameObject aim = null;
-    
+    [SerializeField] private Transform leftArm = null;
     [SerializeField] private Player pl = null;
     private Vector2 mousePos;
     private Rigidbody2D aimRB;
@@ -24,7 +24,7 @@ public class Aim : MonoBehaviour
 
     private void Update()
     {
-        transform.position = pl.GetComponent<Transform>().position;
+        transform.position = leftArm.position;
     }
 
     private void Aiming()

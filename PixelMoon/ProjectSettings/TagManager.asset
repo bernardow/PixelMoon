@@ -9,6 +9,8 @@ TagManager:
   - Item
   - Crate
   - Damage Trap
+  - Lamp
+  - Snake
   layers:
   - Default
   - TransparentFX

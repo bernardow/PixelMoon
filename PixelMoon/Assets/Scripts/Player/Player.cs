@@ -8,38 +8,40 @@ public class Player : MonoBehaviour
     public float speed = 0f;
     public float crouchSpeed = 0f;
     [SerializeField] private float jumpForce = 0f;
-    [SerializeField] private Transform feetCastPoint = null;
-    [SerializeField] private Transform headCastPoint = null;
     [SerializeField] private float timer = 0f;
-    [SerializeField] private Sprite crouchedSprite;
-    [SerializeField] private Sprite standSprite;
-    [SerializeField] private GameObject head = null;
     [SerializeField] private LayerMask mask;
     private CircleCollider2D cc = null;
     private SpriteRenderer sr = null;
     public bool slowDebuff = false;
     public bool crouched = false;
 
-    [Header("Referencias")]
-    [SerializeField] private List<Stairs> st = null;
-    [SerializeField] private Transform gdCP = null;
-
     [Header("Propriedades da Vida")]
     public int vida = 3;
 
     [Header("Inventário")]
     [SerializeField] private List<string> inventory;
-    [SerializeField] private GameObject lampPrefab = null;
-    [SerializeField] private Transform lampEdge = null;
-    [SerializeField] private GameObject medicKitPrefab = null;
-    [SerializeField] private Inventory inv;
-    [SerializeField] private GameObject armPrefab;
     public bool removed = false;
     public string actSlot = null;
     private float inventoryTimer = 1f;
     private float timeSinceLastCath;
     private float timeSinceLastJump = 0f;
     private Rigidbody2D rb;
+
+    public bool hidden = false;
+
+    [Header("Referencias")]
+    [SerializeField] private List<Stairs> st = null;
+    [SerializeField] private Transform gdCP = null;
+    [SerializeField] private Transform feetCastPoint = null;
+    [SerializeField] private Transform headCastPoint = null;
+    [SerializeField] private GameObject head = null;
+    [SerializeField] private Sprite crouchedSprite;
+    [SerializeField] private Sprite standSprite;
+    [SerializeField] private GameObject lampPrefab = null;
+    [SerializeField] private Transform lampEdge = null;
+    [SerializeField] private GameObject medicKitPrefab = null;
+    [SerializeField] private GameObject armPrefab;
+    [SerializeField] private Inventory inv;
 
     // Start is called before the first frame update
     void Awake()
@@ -59,6 +61,7 @@ public class Player : MonoBehaviour
         timeSinceLastCath += Time.deltaTime;
         Death();
         InventoryVisible();
+        Closet();
 
         
     }
@@ -66,6 +69,28 @@ public class Player : MonoBehaviour
     private void FixedUpdate()
     {
         Movement();
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Item"))
+        {
+            if (Input.GetKeyDown(KeyCode.E) && timeSinceLastCath >= inventoryTimer)
+            {
+
+                inventory.Add(collision.gameObject.name);
+                Destroy(collision.gameObject);
+                timeSinceLastCath = 0f;
+            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Damage Trap"))
+        {
+            vida--;
+        }
     }
 
     private void Movement()
@@ -208,19 +233,6 @@ public class Player : MonoBehaviour
         
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Item"))
-        {       
-            if (Input.GetKeyDown(KeyCode.E) && timeSinceLastCath >= inventoryTimer)
-            {
-                
-                inventory.Add(collision.gameObject.name);
-                Destroy(collision.gameObject);
-                timeSinceLastCath = 0f;
-            }
-        }
-    }
 
     public List<string> InventoryCheck()
     {
@@ -306,12 +318,18 @@ public class Player : MonoBehaviour
         else Time.timeScale = 1;
     }
 
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void Closet()
     {
-        if (collision.gameObject.CompareTag("Damage Trap"))
+        if (hidden)
         {
-            vida--;
+            GetComponent<SpriteRenderer>().sortingOrder = 4;
+
+        }
+        else if (!hidden)
+        {
+            
+            GetComponent<SpriteRenderer>().sortingOrder = 10;
         }
     }
+
 }
