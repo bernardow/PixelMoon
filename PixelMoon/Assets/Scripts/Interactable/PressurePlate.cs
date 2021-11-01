@@ -4,43 +4,45 @@ using UnityEngine;
 
 public class PressurePlate : MonoBehaviour
 {
-    private bool active = false;
-    private Vector3 deactivePos;
+    [SerializeField] private LayerMask masks;
+    [SerializeField] private float range = 0f;
+    [SerializeField] private float yPos = 0;
+    private Vector3 originalPosition;
 
     // Start is called before the first frame update
     void Start()
     {
-        deactivePos = transform.position;
+        originalPosition = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        PressureWork();
+        if (Pressure(range))
+        {
+            Debug.Log(Pressure(range));
+            transform.position = new Vector3(transform.position.x, yPos, transform.position.z);
+        }
+        else if(!Pressure(range)) transform.position = originalPosition;   
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    private bool Pressure(float distanceToTarget)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            active = true;
-        }
-    }
+        bool goDown = false;
+        float castDist = distanceToTarget;
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
+        Vector2 endPos = transform.position + Vector3.up * castDist;
+        RaycastHit2D hit = Physics2D.Linecast(transform.position, endPos, masks);
+        if (hit.collider != null)
         {
-            active = false;
+            if (hit.collider.gameObject.CompareTag("Player"))
+            {
+                goDown = true;
+            }
+            else goDown = false;
         }
-    }
 
-    private void PressureWork()
-    {
-        if (active)
-        {
-            transform.Translate(new Vector3(0f, -1f, 0f));
-        }
-        else transform.position = deactivePos;
-    }
+        Debug.DrawLine(transform.position, endPos);
+        return goDown;
+    } 
 }
