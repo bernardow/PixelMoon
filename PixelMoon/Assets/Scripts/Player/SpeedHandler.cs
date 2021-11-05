@@ -20,7 +20,7 @@ public class SpeedHandler : MonoBehaviour
         }
         else if (lp.inLight && (!pl.crouched || !lp.inLight))
         {
-            pl.speed = 1000f;
+            pl.speed = 700f;
         }
     }
 }

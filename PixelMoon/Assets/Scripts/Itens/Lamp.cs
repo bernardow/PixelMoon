@@ -16,7 +16,7 @@ public class Lamp : MonoBehaviour
         if (collision.gameObject.CompareTag("Snake"))
         {
             Debug.Log("LALLALA");
-            collision.GetComponent<Snake>().hiden = true;
+            //collision.GetComponent<Snake>().hiden = true;
         }
     }
 
@@ -26,7 +26,7 @@ public class Lamp : MonoBehaviour
             inLight = false;
         if (collision.gameObject.CompareTag("Snake"))
         {
-            collision.GetComponent<Snake>().hiden = true;
+            //collision.GetComponent<Snake>().hiden = true;
         }
     }
 }

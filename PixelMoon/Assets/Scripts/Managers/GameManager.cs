@@ -1,13 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private Player pl;
     [SerializeField] private GameObject fow;
-    [SerializeField] private GameObject fowCamera = null;
-    [SerializeField] private Transform canvasPosition = null;
     public bool inDark = false;
 
     // Start is called before the first frame update
@@ -19,6 +18,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Restart();
         FOW();
         //fowCamera.transform.position = canvasPosition.position;
 
@@ -31,5 +31,13 @@ public class GameManager : MonoBehaviour
             inDark = true;
         }
         else inDark = false;
+    }
+
+    private void Restart()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }

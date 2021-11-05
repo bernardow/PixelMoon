@@ -9,6 +9,7 @@ public class Aim : MonoBehaviour
     [SerializeField] private GameObject aim = null;
     [SerializeField] private Transform leftArm = null;
     [SerializeField] private Player pl = null;
+    [SerializeField] private SpriteRenderer armSpRen;
     private Vector2 mousePos;
     private Rigidbody2D aimRB;
 
@@ -36,9 +37,15 @@ public class Aim : MonoBehaviour
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
         aimRB.rotation = angle;
 
-        if(aimRB.rotation >= 90f || aimRB.rotation <= -90f)
+        if (aimRB.rotation >= 90f || aimRB.rotation <= -90f)
         {
+            armSpRen.flipY = true;
             pl.GetComponent<SpriteRenderer>().flipX = true;
-        }else pl.GetComponent<SpriteRenderer>().flipX = false;
+        }
+        else
+        {
+            armSpRen.flipY = false;
+            pl.GetComponent<SpriteRenderer>().flipX = false;
+        }
     }
 }

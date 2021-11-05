@@ -194,14 +194,14 @@ public class Player : MonoBehaviour
                     transform.position = new Vector3(stair.transform.position.x, transform.localPosition.y, 0);
 
                     transform.position += new Vector3(0, 1, 0) * 3 * Time.fixedDeltaTime;
-                    rb.gravityScale = 0;
-
+                    
+                    
                 }
                 if (stair.canGoUp && Input.GetKey(KeyCode.S))
                 {
                     stair.onStair = true;
 
-                    rb.gravityScale = 0;
+                    
                     transform.position = new Vector3(stair.transform.position.x, transform.localPosition.y, 0);
                     transform.position += new Vector3(0, -1, 0) * 3 * Time.fixedDeltaTime;
                 }
@@ -211,19 +211,17 @@ public class Player : MonoBehaviour
                     stair.onStair = false;
                 }
 
-
-                if (!stair.onStair)
+                if (stair.onStair)
                 {
-                    rb.gravityScale = 4;
-                }
-                else if (stair.onStair)
-                {
+                    
                     rb.velocity = Vector2.zero;
                     speed = 0f;
+                    
+                    
                     if (Input.GetKeyDown(KeyCode.Space))
                     {
                         stair.onStair = false;
-                        rb.AddForce(Vector2.up * jumpForce / 2, ForceMode2D.Impulse);
+                        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                         timeSinceLastJump = 0;
                     }
                 }

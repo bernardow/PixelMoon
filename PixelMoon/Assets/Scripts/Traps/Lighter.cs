@@ -7,6 +7,7 @@ public class Lighter : MonoBehaviour
     [SerializeField] private Transform castPoint = null;
     [SerializeField] private LayerMask mask;
     [SerializeField] private float range = 0f;
+    public bool hitGround;
     private Rigidbody2D rb;
 
     // Start is called before the first frame update
@@ -47,6 +48,7 @@ public class Lighter : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        FindObjectOfType<AudioManager>().Play("ChandelierFall");
         Destroy(gameObject);
     }
 }

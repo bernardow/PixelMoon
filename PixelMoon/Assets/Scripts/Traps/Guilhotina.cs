@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Guilhotina : MonoBehaviour
 {
+    
     [SerializeField] private float backTo;
     [SerializeField] private float jumpForce;
+    [SerializeField] private AudioSource sourceAudio;
     private bool goUp = false;
     private float initialX = 0f;
     private float yVector = 0f;
@@ -32,6 +34,7 @@ public class Guilhotina : MonoBehaviour
 
         if (transform.position.y >= backTo)
         {
+            sourceAudio.Play();
             goUp = false;
             rb.bodyType = RigidbodyType2D.Dynamic;
             rb.gravityScale = 3f;
@@ -40,6 +43,7 @@ public class Guilhotina : MonoBehaviour
 
         if (rb.bodyType == RigidbodyType2D.Dynamic)
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        
 
     }
 

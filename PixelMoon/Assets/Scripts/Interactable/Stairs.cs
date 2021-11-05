@@ -5,13 +5,12 @@ using UnityEngine;
 public class Stairs : MonoBehaviour
 {
 
-    [SerializeField] private Player pl = null;
-    private Rigidbody2D rb = null;
-
+    private Player pl;
     public bool onStair = false;
     public bool canGoUp = false;
 
-    private void Awake()
+
+    private void Start()
     {
         pl = FindObjectOfType<Player>();
     }
@@ -20,7 +19,12 @@ public class Stairs : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            canGoUp = true;  
+            canGoUp = true;
+            if (onStair)
+            {
+                pl.GetComponent<Rigidbody2D>().gravityScale = 0f;
+            }
+            else pl.GetComponent<Rigidbody2D>().gravityScale = 4f;
         }
     }
 
@@ -30,6 +34,8 @@ public class Stairs : MonoBehaviour
         {
             canGoUp = false;
             onStair = false;
+            pl.GetComponent<Rigidbody2D>().gravityScale = 4f;
+
         }
     }
 }
