@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Tomb : MonoBehaviour
 {
-    [SerializeField] private Transform player = null;
+    [SerializeField] private Transform handPos;
+    private Player player = null;
     private CircleCollider2D cc = null;
     private bool activateTimer = false;
     private bool activateCC = false;
@@ -12,19 +13,24 @@ public class Tomb : MonoBehaviour
     private float timeSinceCatch = 0f;
     private float timer = 5f;
     private float ccTimer = 3f;
+    private bool initiateJumpTimer = false;
+    private float jumpTimer = 1f;
 
     // Start is called before the first frame update
     void Start()
     {
         cc = GetComponent<CircleCollider2D>();
-        player = FindObjectOfType<Player>().transform;   
+        player = FindObjectOfType<Player>();
     }
 
     // Update is called once per frame
     void Update()
-    {
+    { 
         if (activateTimer)
+        {
             timeSinceCatch += Time.deltaTime;
+            
+        }
 
         if (activateCC)
             timeSinceDisable += Time.deltaTime;
@@ -42,6 +48,7 @@ public class Tomb : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             activateTimer = true;
+            player.jumpRange = -1f;
             CatchPlayer();
         }
     }
@@ -49,8 +56,8 @@ public class Tomb : MonoBehaviour
     private void CatchPlayer()
     {
         
-        player.position = new Vector3(transform.position.x, player.position.y, transform.position.z);
-
+        player.transform.position = new Vector3(handPos.position.x, player.transform.position.y, transform.position.z);
+        
 
         if (timeSinceCatch >= timer)
         {
@@ -59,6 +66,9 @@ public class Tomb : MonoBehaviour
             activateTimer = false;
             timeSinceCatch = 0f;
 
+        }else if(timeSinceCatch >= jumpTimer)
+        {
+            player.jumpRange = 0.4f;  
         }
         
     }

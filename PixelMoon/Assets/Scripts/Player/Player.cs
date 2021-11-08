@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     [Header("Propriedades de Movimento")]
     public float speed = 0f;
     public float crouchSpeed = 0f;
+    public float jumpRange = 0.4f;
     [SerializeField] private float jumpForce = 0f;
     [SerializeField] private float timer = 0f;
     [SerializeField] private LayerMask mask;
@@ -102,7 +103,7 @@ public class Player : MonoBehaviour
         // Jump
         if (timeSinceLastJump >= timer)
         {
-            if (Jump(0.4f) == true && Input.GetKey(KeyCode.Space))
+            if (Jump(jumpRange) == true && Input.GetKey(KeyCode.Space))
             {
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 timeSinceLastJump = 0;
@@ -110,7 +111,7 @@ public class Player : MonoBehaviour
         }
 
         //Crouching
-        if (Crouch(0.6f) == true || Input.GetKey(KeyCode.S))
+        if (Crouch(0.6f) == true || Input.GetKey(KeyCode.S) && Jump(jumpRange))
         {
             crouched = true;
             cc.enabled = false;
@@ -298,14 +299,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void MoveDebuff(float originalSpeedPercentage)
-    {
-        if (slowDebuff)
-        {
-            speed = speed * (originalSpeedPercentage / 100);
-            return;
-        }
-    }
+   
 
     private void Death()
     {
