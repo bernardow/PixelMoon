@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Lever : MonoBehaviour
 {
+    [SerializeField] private bool infintyTimer = false;
     [SerializeField] private float deactiveRotation;
     [SerializeField] private float activeRotation;
     private bool canPress = false;
@@ -26,7 +27,9 @@ public class Lever : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("Lever");
             activated = true;
-            activateTimer = true;
+            if(!infintyTimer)
+                activateTimer = true;
+            
             transform.rotation = Quaternion.Euler(0f, 0f, activeRotation);
         } else if(timeSinceActivated >= timer)
         {

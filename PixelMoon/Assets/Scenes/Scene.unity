@@ -1787,6 +1787,11 @@ PrefabInstance:
       propertyPath: source
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1493283341640099255, guid: 4dedf273cd5564c5c9c633577353608b,
+        type: 3}
+      propertyPath: infintyTimer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1493283342642000440, guid: 4dedf273cd5564c5c9c633577353608b,
         type: 3}
       propertyPath: m_LocalPosition.x
