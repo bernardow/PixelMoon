@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WindowsLight : MonoBehaviour
 {
-    private Lamp lp;
+    private Lamp lp = null;
 
     // Start is called before the first frame update
     void Start()
