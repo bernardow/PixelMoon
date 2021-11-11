@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-
-    [SerializeField] private float goTo;
+    [SerializeField] private Sprite closeDoor = null;
+    [SerializeField] private Sprite openDoor = null;
     [SerializeField] private Lever curLever = null;
-    
-    private Transform tf;
-    private Vector3 inicialPos;
+    [SerializeField] private GameObject doorFrame = null;
+    [SerializeField] private BoxCollider2D bc2D;
+
+    private SpriteRenderer spr = null;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        tf = GetComponent<Transform>();
-        inicialPos = tf.position;
+        spr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -28,8 +29,15 @@ public class Door : MonoBehaviour
     {
         if (atachedLever.activated)
         {
-            transform.position = new Vector3(tf.position.x, goTo, transform.position.z);
+            bc2D.isTrigger = true;
+            doorFrame.SetActive(true);
+            spr.sprite = openDoor;
         }
-        else transform.position = inicialPos;
+        else
+        {
+            bc2D.isTrigger = false;
+            doorFrame.SetActive(false);
+            spr.sprite = closeDoor;
+        }
     }
 }
