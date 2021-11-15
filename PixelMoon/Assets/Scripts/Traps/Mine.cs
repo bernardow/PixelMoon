@@ -39,7 +39,7 @@ public class Mine : MonoBehaviour
     private void Kabum()
     {
         if (mr.inRange)
-            pl.vida--;
+            pl.vida = 0;
         Destroy(gameObject);
     }
 }
