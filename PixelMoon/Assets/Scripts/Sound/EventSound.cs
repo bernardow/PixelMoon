@@ -5,14 +5,7 @@ using UnityEngine;
 public class EventSound : MonoBehaviour
 {
     [SerializeField] private string soundName = null;
-    private BoxCollider2D bc2D = null;
     private bool inRange = false;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        bc2D = GetComponent<BoxCollider2D>();
-    }
 
     // Update is called once per frame
     void Update()
@@ -25,9 +18,8 @@ public class EventSound : MonoBehaviour
         if (inRange)
         {
             FindObjectOfType<AudioManager>().Play(soundName);
-            bc2D.enabled = false;
+            Destroy(gameObject);
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

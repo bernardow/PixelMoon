@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     private SpriteRenderer sr = null;
     public bool slowDebuff = false;
     public bool crouched = false;
+    private bool canJump = false;
 
     [Header("Propriedades da Vida")]
     public int vida = 3;
@@ -64,7 +65,9 @@ public class Player : MonoBehaviour
         InventoryVisible();
         Closet();
 
-        
+        if (Jump(jumpRange))
+            canJump = true;
+        else canJump = false;
     }
 
     private void FixedUpdate()
@@ -103,7 +106,7 @@ public class Player : MonoBehaviour
         // Jump
         if (timeSinceLastJump >= timer)
         {
-            if (Jump(jumpRange) == true && Input.GetKey(KeyCode.Space))
+            if (crouched == false && Jump(jumpRange) == true && Input.GetKey(KeyCode.Space))
             {
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 timeSinceLastJump = 0;
@@ -111,19 +114,19 @@ public class Player : MonoBehaviour
         }
 
         //Crouching
-        if (Crouch(0.6f) == true || Input.GetKey(KeyCode.S) && Jump(jumpRange))
+        if ((Crouch(0.5f) == true || Input.GetKey(KeyCode.S)) && canJump)
         {
             crouched = true;
             cc.enabled = false;
             sr.sprite = crouchedSprite;
-            head.GetComponent<Transform>().position = new Vector3(transform.position.x, transform.position.y + 0.02f, 0);
+            head.GetComponent<Transform>().position = new Vector3(transform.position.x, transform.position.y, 0);
         }
         else
         {
             crouched = false;
             cc.enabled = true;
             sr.sprite = standSprite;
-            head.GetComponent<Transform>().position = new Vector3(transform.position.x, transform.position.y + 1.02f, 0);
+            head.GetComponent<Transform>().position = new Vector3(transform.position.x, transform.position.y + 1f, 0);
         }
 
         //Stairs :D
@@ -164,7 +167,7 @@ public class Player : MonoBehaviour
 
         Vector2 endPos = headCastPoint.position + Vector3.up * castDist;
 
-        RaycastHit2D hit = Physics2D.Linecast(headCastPoint.position, endPos);
+        RaycastHit2D hit = Physics2D.Linecast(headCastPoint.position, endPos, mask);
 
         if (hit.collider != null)
         {

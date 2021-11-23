@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Bird : MonoBehaviour
 {
-    [SerializeField] private float flyRange = 0f;
-    [SerializeField] private LayerMask masks;
+    private Player pl = null;
+    private bool inRange = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        pl = FindObjectOfType<Player>();
     }
 
     // Update is called once per frame
@@ -19,5 +19,19 @@ public class Bird : MonoBehaviour
         
     }
 
-   
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            inRange = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            inRange = false;
+        }
+    }
 }
