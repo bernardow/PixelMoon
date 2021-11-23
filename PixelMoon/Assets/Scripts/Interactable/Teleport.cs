@@ -22,13 +22,17 @@ public class Teleport : MonoBehaviour
 
     private void OpenDoor(Lever atachedLever)
     {
-        if (atachedLever.activated)
+        if(atachedLever != null)
         {
-            if(target != null)
+            if (atachedLever.activated)
             {
-                target.transform.position = OtherDoorPos(otherTeleport);
+                if (target != null)
+                {
+                    target.transform.position = OtherDoorPos(otherTeleport);
+                }
             }
         }
+        
       
     }
 

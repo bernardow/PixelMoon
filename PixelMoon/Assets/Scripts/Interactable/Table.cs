@@ -8,6 +8,9 @@ public class Table : MonoBehaviour
     [SerializeField] private Transform armEdge;
     [SerializeField] private GameObject lamp = null;
     [SerializeField] private Transform restPoint;
+    [SerializeField] private List<WallLights> lights;
+
+    private bool isResting = false;
     private bool canCatch = false;
 
     // Start is called before the first frame update
@@ -32,6 +35,9 @@ public class Table : MonoBehaviour
                 lamp.GetComponent<Transform>().position = armEdge.position;
             }
         }
+
+        if(lights != null)
+            LightUp();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -42,5 +48,19 @@ public class Table : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         canCatch = false;
+    }
+
+    private void LightUp()
+    {
+        if (lamp.GetComponent<Transform>().position == restPoint.position)
+            isResting = true;
+        else isResting = false;
+
+        foreach(WallLights light in lights)
+        {
+            if(isResting)
+                light.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            
+        }
     }
 }
