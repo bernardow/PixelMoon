@@ -5,6 +5,7 @@ using UnityEngine;
 public class Closet : MonoBehaviour
 {
     private Player pl;
+    private bool inRange = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,18 +20,29 @@ public class Closet : MonoBehaviour
             pl.transform.position = transform.position;
         }
         else pl.transform.position = pl.transform.position;
+
+        if (inRange)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+
+                pl.transform.position = transform.position;
+                pl.hidden = true;
+            }
+            else if (Input.GetKeyDown(KeyCode.F))
+            {
+                pl.hidden = false;
+            }
+        }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            
-            pl.transform.position = transform.position;   
-            pl.hidden = true;
-        }else if (Input.GetKeyDown(KeyCode.F))
-        {
-            pl.hidden = false;
-        }
+        inRange = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        inRange = false;
     }
 }
