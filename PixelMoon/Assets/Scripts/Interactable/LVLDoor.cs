@@ -7,15 +7,30 @@ public class LVLDoor : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private Transform outPutDoor;
     [SerializeField] private Fade gm;
-    
-    private void OnTriggerStay2D(Collider2D collision)
+    private bool inRange = false;
+
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (inRange)
         {
-            player.transform.position = OtherDoorPos(outPutDoor);
-            gm.RunFade(true);
-            
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                player.transform.position = OtherDoorPos(outPutDoor);
+                gm.RunFade(true);
+            }
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+            inRange = true; 
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+            inRange = false;
     }
 
     private Vector3 OtherDoorPos(Transform outPut)

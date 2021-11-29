@@ -38,11 +38,13 @@ public class Closet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        inRange = true;
+        if(collision.gameObject.CompareTag("Player"))
+            inRange = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        inRange = false;
+        if(collision.gameObject.CompareTag("Player"))
+            inRange = false;
     }
 }

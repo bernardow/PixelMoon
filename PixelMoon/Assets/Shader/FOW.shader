@@ -50,7 +50,7 @@
                 fixed4 col = tex2D(_MainTex, i.uv) + tex2D(_SecondaryTex, i.uv);
                 col.a = 2.0f - col.r * 1.5f - col.b * 0.5f;
 
-                return fixed4(0,0,0, col.a);
+                return fixed4(0.06,0.06,0.06, col.a);
             }
             ENDCG
         }
