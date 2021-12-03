@@ -10,11 +10,20 @@ public class Aim : MonoBehaviour
     [SerializeField] private Transform leftArm = null;
     [SerializeField] private Player pl = null;
     [SerializeField] private SpriteRenderer armSpRen;
+    [SerializeField] private Transform rigthArm = null;
+    [SerializeField] private GameObject edgeArm = null;
+    private Vector3 originalArmPos;
+
+    private bool changeEdge = false;
     private Vector2 mousePos;
     private Rigidbody2D aimRB;
 
+    private GameObject player;
+
     void Start()
     {
+        player = FindObjectOfType<Player>().gameObject;
+        originalArmPos = leftArm.position;
         aimRB = GetComponent<Rigidbody2D>();
     }
    
@@ -25,7 +34,8 @@ public class Aim : MonoBehaviour
 
     private void Update()
     {
-        transform.position = leftArm.position;
+        ArmDealer();
+        
     }
 
     private void Aiming()
@@ -48,4 +58,27 @@ public class Aim : MonoBehaviour
             pl.GetComponent<SpriteRenderer>().flipX = false;
         }
     }
+
+    private void ArmDealer()
+    {
+        /*if (changeEdge)
+        {
+            edgeArm.transform.rotation = Quaternion.FromToRotation(Vector3.down, Vector3.up);
+        }
+        else edgeArm.transform.rotation = Quaternion.FromToRotation(Vector3.up, Vector3.down);*/
+
+
+        if (armSpRen.flipY == true)
+        {
+          
+            transform.position = rigthArm.position;
+            changeEdge = true;
+        }
+        else
+        {
+            changeEdge = false;
+            transform.position = leftArm.position;
+        }
+    }
+
 }

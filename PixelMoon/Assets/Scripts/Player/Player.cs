@@ -54,6 +54,7 @@ public class Player : MonoBehaviour
         st.Add(FindObjectOfType<Stairs>());
 
         crouchSpeed = 500;
+       
     }
 
     // Update is called once per frame

@@ -8,6 +8,9 @@ public class Guilhotina : MonoBehaviour
     [SerializeField] private float backTo;
     [SerializeField] private float jumpForce;
     [SerializeField] private AudioSource sourceAudio;
+    private BoxCollider2D bc2d = null;
+    [SerializeField] private BoxCollider2D crateCollider = null;
+
     private bool goUp = false;
     private float initialX = 0f;
     private float yVector = 0f;
@@ -16,6 +19,7 @@ public class Guilhotina : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
         initialX = transform.position.x;
     }
@@ -23,6 +27,7 @@ public class Guilhotina : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         transform.position = new Vector3(initialX, transform.position.y, transform.position.z);
 
         if (goUp)
@@ -47,6 +52,7 @@ public class Guilhotina : MonoBehaviour
 
     }
 
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -58,12 +64,15 @@ public class Guilhotina : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        
+
         if (transform.position.y <= backTo)
         {
-            yVector = 1;
-            goUp = true;
+        yVector = 1;
+        goUp = true;
         }
-         
+
+        
     }
 
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5841329877530778455}
   - component: {fileID: 5841329877530778453}
   - component: {fileID: 5841329877530778452}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pendulum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 5841329878628530151}
   - component: {fileID: 5841329878628530150}
   - component: {fileID: 5841329878628530169}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pendulo REAL
   m_TagString: Untagged
   m_Icon: {fileID: 0}

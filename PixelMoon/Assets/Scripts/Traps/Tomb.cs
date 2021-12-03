@@ -13,7 +13,6 @@ public class Tomb : MonoBehaviour
     private float timeSinceCatch = 0f;
     private float timer = 5f;
     private float ccTimer = 3f;
-    private bool initiateJumpTimer = false;
     private float jumpTimer = 1f;
 
     // Start is called before the first frame update

@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private Player pl;
     [SerializeField] private GameObject fow;
+    [SerializeField] private int lvlNumber;
 
     [Header("HUD")]
     [SerializeField] private GameObject life1 = null;
@@ -45,7 +46,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(lvlNumber);
         }
     }
 

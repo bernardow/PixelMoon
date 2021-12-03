@@ -7,6 +7,7 @@ public class Teleport : MonoBehaviour
     [SerializeField] private Lever curLever;
     [SerializeField] private Transform otherTeleport;
     private GameObject target = null;
+    private bool playerIn = false;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,12 @@ public class Teleport : MonoBehaviour
                     target.transform.position = OtherDoorPos(otherTeleport);
                 }
             }
+        }else
+        {
+            if(playerIn && Input.GetKeyDown(KeyCode.E))
+            {
+                target.transform.position = OtherDoorPos(otherTeleport);
+            }
         }
         
       
@@ -46,11 +53,19 @@ public class Teleport : MonoBehaviour
     {
         if(!collision.gameObject.CompareTag("Ground"))
             target = collision.gameObject;
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            playerIn = true;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (!collision.gameObject.CompareTag("Ground"))
             target = null;
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            playerIn = false;
+        }
     }
 }

@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ce1f8e62541eed34999c9a0a33c2ae39, type: 3}
-  m_Color: {r: 0.8143824, g: 0.0141509175, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 103bc04ff4b3bf449b900c41344ac77d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -101,6 +101,7 @@ MonoBehaviour:
   backTo: 13.5
   jumpForce: 10
   sourceAudio: {fileID: 983052085}
+  crateCollider: {fileID: 0}
 --- !u!58 &7975157124352901561
 CircleCollider2D:
   m_ObjectHideFlags: 0

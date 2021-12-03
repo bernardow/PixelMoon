@@ -5,6 +5,9 @@ using UnityEngine;
 public class WallLights : MonoBehaviour
 {
     [SerializeField] private GameObject lightFrame = null;
+    
+    public bool failingLight;
+
     private Lamp lp = null;
 
     // Start is called before the first frame update
@@ -17,6 +20,7 @@ public class WallLights : MonoBehaviour
     void Update()
     {
         
+        Blink();  
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -25,5 +29,24 @@ public class WallLights : MonoBehaviour
         {
             lightFrame.SetActive(true);
         }
+    }
+
+    private void Blink()
+    {
+        if (failingLight)
+        {
+            float timer = 1f;
+            timer -= Time.deltaTime;
+
+            if (timer <= 0 && timer > -1f)
+            {
+                lightFrame.SetActive(false);
+            }
+            if(timer <= -1)
+            {
+                lightFrame.SetActive(true);
+                timer = 1f;
+            }
+        } 
     }
 }

@@ -10,16 +10,19 @@ public class SteamTube : MonoBehaviour
 
     [Header("Referencias")]
     [SerializeField] private GameObject steam = null;
+    private GameObject smoke = null;
 
     private bool initiateTimer = false;
     private float timeSinceLastShoosh = 0f;
     private float timeSinceLastDeactive = 0f;
     private bool initiateSecondTimer = false;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         
+        smoke = transform.GetChild(1).gameObject;
     }
 
     // Update is called once per frame
@@ -28,11 +31,13 @@ public class SteamTube : MonoBehaviour
         if (initiateTimer)
         {
             timeSinceLastShoosh += Time.deltaTime;
+            smoke.SetActive(true);
             steam.SetActive(true);
         }
 
         if(timeSinceLastShoosh >= timer)
         {
+            smoke.SetActive(false);
             steam.SetActive(false);
             initiateTimer = false;
             timeSinceLastShoosh = 0f;

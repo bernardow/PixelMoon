@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Table : MonoBehaviour
 {
-    [SerializeField] private Player pl;
+    private Player pl = null;
     [SerializeField] private Transform armEdge;
     [SerializeField] private GameObject lamp = null;
     [SerializeField] private Transform restPoint;
@@ -16,7 +16,8 @@ public class Table : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        pl = FindObjectOfType<Player>();
+        lamp = GameObject.FindGameObjectWithTag("Lamp");
     }
 
     // Update is called once per frame
@@ -58,7 +59,7 @@ public class Table : MonoBehaviour
 
         foreach(WallLights light in lights)
         {
-            if(isResting)
+            if(isResting && !light.failingLight)
                 light.gameObject.transform.GetChild(0).gameObject.SetActive(true);
             
         }
