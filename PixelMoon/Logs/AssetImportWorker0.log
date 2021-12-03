@@ -1,0 +1,171 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.23f1 (c5d91304a876) revision 12966163'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1348; Version 2009; 64bit' Language: 'pt' Physical Memory: 16318 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/ximith/Documents/GitHub/PixelMoon/PixelMoon
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56789
+Successfully changed project path to: C:/Users/ximith/Documents/GitHub/PixelMoon/PixelMoon
+C:/Users/ximith/Documents/GitHub/PixelMoon/PixelMoon
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 69.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.23f1 (c5d91304a876)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ximith/Documents/GitHub/PixelMoon/PixelMoon/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f82)
+    Vendor:   
+    VRAM:     3962 MB
+    Driver:   30.0.14.7141
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56756
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001707 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 61.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.515 seconds
+Domain Reload Profiling:
+	ReloadAssembly (515ms)
+		BeginReloadAssembly (43ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (408ms)
+			LoadAssemblies (42ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (133ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (166ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (62ms)
+				BeforeProcessingInitializeOnLoad (7ms)
+				ProcessInitializeOnLoadAttributes (70ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007126 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 58.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.111 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1112ms)
+		BeginReloadAssembly (124ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (931ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (289ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (395ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (59ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (201ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3071 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 120.4 MB.
+System memory in use after: 120.6 MB.
+
+Unloading 68 unused Assets to reduce memory usage. Loaded Objects now: 3469.
+Total: 5.838100 ms (FindLiveObjects: 0.275200 ms CreateObjectMapping: 0.158600 ms MarkObjects: 5.337200 ms  DeleteObjects: 0.066300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Souns n Musics/Sounds/fase 1/121633__halleck__gravel-drop-on-metal-1 (1) 1.wav
+  artifactKey: Guid(d5d7fa0a772f19c46a2317ef196c8916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 1/121633__halleck__gravel-drop-on-metal-1 (1) 1.wav using Guid(d5d7fa0a772f19c46a2317ef196c8916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da1845dc46e2575b35d2df73f4b53c2a') in 0.111297 seconds 
+  Import took 0.115342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 197.700144 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 1/219499__jarredgibb__door-creak 1.wav
+  artifactKey: Guid(109a6c40395225a4d8fc2bef7748aa0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 1/219499__jarredgibb__door-creak 1.wav using Guid(109a6c40395225a4d8fc2bef7748aa0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84427d584ddcfe85e16e3dd4e9333862') in 0.014231 seconds 
+  Import took 0.019482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 150.723067 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 1/386060__bean-jamin__ghost-train 1.wav
+  artifactKey: Guid(9a9ba8687ad2da14ead12114785ebc14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 1/386060__bean-jamin__ghost-train 1.wav using Guid(9a9ba8687ad2da14ead12114785ebc14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53ac7479e12df844d662e4f719c341fa') in 0.021595 seconds 
+  Import took 0.026693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 75.785278 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 1/400991__inspectorj__construction-jackhammer-excavator-a 1.wav
+  artifactKey: Guid(d65ab91a59f673c448dfae15c0a56f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 1/400991__inspectorj__construction-jackhammer-excavator-a 1.wav using Guid(d65ab91a59f673c448dfae15c0a56f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ab77c96decef09d959d67c77cfea062') in 0.016329 seconds 
+  Import took 0.020931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 182.046091 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 1/Lever.wav
+  artifactKey: Guid(eb0741dbc620f490b96dfe64f9a19677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 1/Lever.wav using Guid(eb0741dbc620f490b96dfe64f9a19677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e191e6cc6796fb85f2389158f9ce91f') in 0.013355 seconds 
+  Import took 0.018405 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
