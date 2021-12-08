@@ -15,11 +15,11 @@ C:/Users/ximith/Documents/GitHub/PixelMoon/PixelMoon
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56789
+53195
 Successfully changed project path to: C:/Users/ximith/Documents/GitHub/PixelMoon/PixelMoon
 C:/Users/ximith/Documents/GitHub/PixelMoon/PixelMoon
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 69.20 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 78.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.23f1 (c5d91304a876)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Resources/UnitySubsystems
@@ -35,89 +35,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56756
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56132
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001707 seconds.
+Registered in 0.001775 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 61.59 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 63.60 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.515 seconds
+- Completed reload, in  0.543 seconds
 Domain Reload Profiling:
-	ReloadAssembly (515ms)
-		BeginReloadAssembly (43ms)
+	ReloadAssembly (543ms)
+		BeginReloadAssembly (45ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (408ms)
-			LoadAssemblies (42ms)
+		EndReloadAssembly (433ms)
+			LoadAssemblies (43ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (133ms)
+			SetupTypeCache (141ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (166ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (174ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (62ms)
-				BeforeProcessingInitializeOnLoad (7ms)
-				ProcessInitializeOnLoadAttributes (70ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
+				RefreshPlugins (64ms)
+				BeforeProcessingInitializeOnLoad (8ms)
+				ProcessInitializeOnLoadAttributes (72ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007126 seconds.
+Registered in 0.007376 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 58.99 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 60.24 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.111 seconds
+- Completed reload, in  1.173 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1112ms)
-		BeginReloadAssembly (124ms)
+	ReloadAssembly (1174ms)
+		BeginReloadAssembly (129ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (931ms)
-			LoadAssemblies (87ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (984ms)
+			LoadAssemblies (91ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (289ms)
+			SetupTypeCache (321ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (395ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (413ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (59ms)
-				BeforeProcessingInitializeOnLoad (81ms)
-				ProcessInitializeOnLoadAttributes (201ms)
-				ProcessInitializeOnLoadMethodAttributes (44ms)
+				RefreshPlugins (60ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (207ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
 				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3071 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 120.4 MB.
 System memory in use after: 120.6 MB.
 
 Unloading 68 unused Assets to reduce memory usage. Loaded Objects now: 3469.
-Total: 5.838100 ms (FindLiveObjects: 0.275200 ms CreateObjectMapping: 0.158600 ms MarkObjects: 5.337200 ms  DeleteObjects: 0.066300 ms)
+Total: 7.031700 ms (FindLiveObjects: 0.274300 ms CreateObjectMapping: 0.157600 ms MarkObjects: 6.524000 ms  DeleteObjects: 0.074500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,41 +131,673 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Souns n Musics/Sounds/fase 1/121633__halleck__gravel-drop-on-metal-1 (1) 1.wav
-  artifactKey: Guid(d5d7fa0a772f19c46a2317ef196c8916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Souns n Musics/Sounds/fase 1/121633__halleck__gravel-drop-on-metal-1 (1) 1.wav using Guid(d5d7fa0a772f19c46a2317ef196c8916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da1845dc46e2575b35d2df73f4b53c2a') in 0.111297 seconds 
-  Import took 0.115342 seconds .
+  path: Assets/Scenes/Fase1.unity
+  artifactKey: Guid(dd107eb20fb1aa740bf2f0d9c5a049b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Fase1.unity using Guid(dd107eb20fb1aa740bf2f0d9c5a049b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9f600843caf5c9caf87639f6cc6e183') in 0.017203 seconds 
+  Import took 0.021284 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 197.700144 seconds.
-  path: Assets/Souns n Musics/Sounds/fase 1/219499__jarredgibb__door-creak 1.wav
-  artifactKey: Guid(109a6c40395225a4d8fc2bef7748aa0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Souns n Musics/Sounds/fase 1/219499__jarredgibb__door-creak 1.wav using Guid(109a6c40395225a4d8fc2bef7748aa0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84427d584ddcfe85e16e3dd4e9333862') in 0.014231 seconds 
-  Import took 0.019482 seconds .
+  Time since last request: 464.985882 seconds.
+  path: Assets/Souns n Musics/Sounds/protagonista
+  artifactKey: Guid(89474fdc8a7304448b49a76b7bebf21d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/protagonista using Guid(89474fdc8a7304448b49a76b7bebf21d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '490db94ce5fc1b5fe0fd27ce30b11f2f') in 0.006518 seconds 
+  Import took 0.011269 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 150.723067 seconds.
-  path: Assets/Souns n Musics/Sounds/fase 1/386060__bean-jamin__ghost-train 1.wav
-  artifactKey: Guid(9a9ba8687ad2da14ead12114785ebc14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Souns n Musics/Sounds/fase 1/386060__bean-jamin__ghost-train 1.wav using Guid(9a9ba8687ad2da14ead12114785ebc14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53ac7479e12df844d662e4f719c341fa') in 0.021595 seconds 
-  Import took 0.026693 seconds .
+  Time since last request: 19.781725 seconds.
+  path: Assets/Souns n Musics/Sounds/protagonista/andar abaixado.wav
+  artifactKey: Guid(24e9f3534609a524098298cc3d893b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/protagonista/andar abaixado.wav using Guid(24e9f3534609a524098298cc3d893b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed55bb15e32566ef3588a3c825bc7ff8') in 0.162400 seconds 
+  Import took 0.204500 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 75.785278 seconds.
-  path: Assets/Souns n Musics/Sounds/fase 1/400991__inspectorj__construction-jackhammer-excavator-a 1.wav
-  artifactKey: Guid(d65ab91a59f673c448dfae15c0a56f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Souns n Musics/Sounds/fase 1/400991__inspectorj__construction-jackhammer-excavator-a 1.wav using Guid(d65ab91a59f673c448dfae15c0a56f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ab77c96decef09d959d67c77cfea062') in 0.016329 seconds 
-  Import took 0.020931 seconds .
+  Time since last request: 0.000221 seconds.
+  path: Assets/Souns n Musics/Sounds/protagonista/subir escadas.mp3
+  artifactKey: Guid(80b64159a1465f748b47b63e9f26d126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/protagonista/subir escadas.mp3 using Guid(80b64159a1465f748b47b63e9f26d126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4e5734239211eb8fc1f72e3eebbdab2') in 0.015222 seconds 
+  Import took 0.019131 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 182.046091 seconds.
-  path: Assets/Souns n Musics/Sounds/fase 1/Lever.wav
-  artifactKey: Guid(eb0741dbc620f490b96dfe64f9a19677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Souns n Musics/Sounds/fase 1/Lever.wav using Guid(eb0741dbc620f490b96dfe64f9a19677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e191e6cc6796fb85f2389158f9ce91f') in 0.013355 seconds 
-  Import took 0.018405 seconds .
+  Time since last request: 0.000153 seconds.
+  path: Assets/Souns n Musics/Sounds/protagonista/passos terra.wav
+  artifactKey: Guid(0548df328b0adb249a18481f79b18ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/protagonista/passos terra.wav using Guid(0548df328b0adb249a18481f79b18ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fa497987dc481706a88c0df81f390f8') in 0.060732 seconds 
+  Import took 0.064763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Souns n Musics/Sounds/protagonista/passos.wav
+  artifactKey: Guid(c31f8312442476341b03ea223274d8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/protagonista/passos.wav using Guid(c31f8312442476341b03ea223274d8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dcc5d0aabf835bfdb027c47590fdcfb') in 0.051205 seconds 
+  Import took 0.056127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Souns n Musics/Sounds/protagonista/pular.wav
+  artifactKey: Guid(5f99a5620f604c440bd4a3456345ec43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/protagonista/pular.wav using Guid(5f99a5620f604c440bd4a3456345ec43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6df6b47b09bf83c72c26fc2b6bed4288') in 0.037325 seconds 
+  Import took 0.041363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Souns n Musics/Sounds/protagonista/passos chuva.wav
+  artifactKey: Guid(04d3498597be67049a6268bb9478512d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/protagonista/passos chuva.wav using Guid(04d3498597be67049a6268bb9478512d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '611f5c13778bf11f254a95b0eae11549') in 0.031472 seconds 
+  Import took 0.035426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 848.635533 seconds.
+  path: Assets/Souns n Musics/Sounds/protagonista/pular 1.wav
+  artifactKey: Guid(8cd68b0c36e299f498446660ee3f8f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/protagonista/pular 1.wav using Guid(8cd68b0c36e299f498446660ee3f8f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '389059e427a0792745ca2f266c42f02c') in 0.068507 seconds 
+  Import took 0.073546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.593057 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos
+  artifactKey: Guid(49e86c78403a0ed4f9084689de38b38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos using Guid(49e86c78403a0ed4f9084689de38b38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f893e4536e75b2ecfb13e083276b1ae3') in 0.005275 seconds 
+  Import took 0.010073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.069636 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/cachorro
+  artifactKey: Guid(78dd4f196f83a454cb7aa80512cf9798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/cachorro using Guid(78dd4f196f83a454cb7aa80512cf9798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34199d1e0275d04db6fae697b24b8d45') in 0.005368 seconds 
+  Import took 0.009591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.049780 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/cachorro/latido 2.wav
+  artifactKey: Guid(819c3c63ff33e134f8e7b4518f4a82ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/cachorro/latido 2.wav using Guid(819c3c63ff33e134f8e7b4518f4a82ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5895050df13278771c8798fe0a3f96ce') in 0.010459 seconds 
+  Import took 0.014601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/cachorro/mordida.wav
+  artifactKey: Guid(b7f9637bae709d546a9306b1fb35930f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/cachorro/mordida.wav using Guid(b7f9637bae709d546a9306b1fb35930f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39e6c0c86bee2a024ad06eafc986fd63') in 0.049495 seconds 
+  Import took 0.053610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/cachorro/latido.wav
+  artifactKey: Guid(6cebf1aed54835d4b81c9c9db3439fe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/cachorro/latido.wav using Guid(6cebf1aed54835d4b81c9c9db3439fe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e1545b35dab2c43312c56fc4fd393e8') in 0.027796 seconds 
+  Import took 0.031771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/cachorro/rosnado.wav
+  artifactKey: Guid(f69759ebacd0b134fa769f0d4eb1f5a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/cachorro/rosnado.wav using Guid(f69759ebacd0b134fa769f0d4eb1f5a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38fc628ee5687b63fae72d224358e7f6') in 0.014302 seconds 
+  Import took 0.018054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 551.470360 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/monstro/monstro.wav
+  artifactKey: Guid(2926aa182de0efa44b2196a8fb3ab47e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/monstro/monstro.wav using Guid(2926aa182de0efa44b2196a8fb3ab47e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d2f2114c07beddda1b9d7488680dadf') in 0.014069 seconds 
+  Import took 0.033111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/monstro/rugido.wav
+  artifactKey: Guid(ecb9e81d201f17f4ca4cbf2b8f35aea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/monstro/rugido.wav using Guid(ecb9e81d201f17f4ca4cbf2b8f35aea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06ba23546278b962a7504d058b39aae4') in 0.018897 seconds 
+  Import took 0.022738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/monstro/teleporte.wav
+  artifactKey: Guid(e63e26b6e20acc6479d8de8a3302a557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/monstro/teleporte.wav using Guid(e63e26b6e20acc6479d8de8a3302a557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4845b2fd63efc2c85a1927e180182c5d') in 0.059326 seconds 
+  Import took 0.063216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/monstro/rosnado.wav
+  artifactKey: Guid(ad325cfb8f00ab9409473277a9f034cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/monstro/rosnado.wav using Guid(ad325cfb8f00ab9409473277a9f034cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf0347779c4df8844420a9345fd5cca2') in 0.065157 seconds 
+  Import took 0.069136 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 185.194257 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/pessoa/pessoa 2.wav
+  artifactKey: Guid(c95c413857e9c644091911a3c654a54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/pessoa/pessoa 2.wav using Guid(c95c413857e9c644091911a3c654a54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f5fed224fd2ab8da1e1755c234de7a8') in 0.011315 seconds 
+  Import took 0.016412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/pessoa/pessoa 3.wav
+  artifactKey: Guid(e3277c252a06f7148a386b34a390d3b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/pessoa/pessoa 3.wav using Guid(e3277c252a06f7148a386b34a390d3b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d67c84b68f26dfa4aac50f376947d24') in 0.010277 seconds 
+  Import took 0.014466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/pessoa/pessoa.wav
+  artifactKey: Guid(95d88fd53bde74e47a2a2aad54286237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/pessoa/pessoa.wav using Guid(95d88fd53bde74e47a2a2aad54286237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f873a09f228bbefe761d2e497881a3a5') in 0.011023 seconds 
+  Import took 0.015273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/pessoa/pessoa 4.mp3
+  artifactKey: Guid(ed9499a586fdb1f4c92b5a794fa64f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/pessoa/pessoa 4.mp3 using Guid(ed9499a586fdb1f4c92b5a794fa64f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8002ace95427bf766b5731b1c6e864f3') in 0.009616 seconds 
+  Import took 0.013639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.617438 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/pessoa/criança
+  artifactKey: Guid(4bf091b6833326240910813528dd28cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/pessoa/criança using Guid(4bf091b6833326240910813528dd28cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '511f56b128f2daa2e123f80951bb6321') in 0.005801 seconds 
+  Import took 0.010051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.900446 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/pessoa/criança/criança.wav
+  artifactKey: Guid(1d6cb8ca4f9ace8459008ea2e54aaea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/pessoa/criança/criança.wav using Guid(1d6cb8ca4f9ace8459008ea2e54aaea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1dff8ee80e20d895174d7305870d8fc') in 0.011296 seconds 
+  Import took 0.015494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/pessoa/criança/risada.wav
+  artifactKey: Guid(dad8fc0bb0c8c6f43a358db7015e1c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/pessoa/criança/risada.wav using Guid(dad8fc0bb0c8c6f43a358db7015e1c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f910977b612790afa31039123d9158f4') in 0.015634 seconds 
+  Import took 0.029500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/pessoa/criança/musica.mp3
+  artifactKey: Guid(40a1b7c5a5547754c834c96726c99dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/pessoa/criança/musica.mp3 using Guid(40a1b7c5a5547754c834c96726c99dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '349a336664d8afacf24cfbf7620b1c5b') in 0.049256 seconds 
+  Import took 0.053121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.588014 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/cachorro/latido 1.wav
+  artifactKey: Guid(5e67c6c008636404e87e6c9ce1573698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/cachorro/latido 1.wav using Guid(5e67c6c008636404e87e6c9ce1573698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c460a7b81db578bcf69f487d2bca2e2') in 0.014707 seconds 
+  Import took 0.019015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/cachorro/rosnado 1.wav
+  artifactKey: Guid(cbdb4e1bb668cac4c9c8926a2c2f1ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/cachorro/rosnado 1.wav using Guid(cbdb4e1bb668cac4c9c8926a2c2f1ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccd83917c9cc7dfc410d1a99c1405afa') in 0.069497 seconds 
+  Import took 0.081961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/cachorro/mordida 1.wav
+  artifactKey: Guid(8014f05810846374caca1e6ded1cbd71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/cachorro/mordida 1.wav using Guid(8014f05810846374caca1e6ded1cbd71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6696465fa06467d8fbcd55efd46413cb') in 0.010917 seconds 
+  Import took 0.015134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/cachorro/latido 3.wav
+  artifactKey: Guid(8877e7dfb0152ba4ab5c3100ae8bccc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/cachorro/latido 3.wav using Guid(8877e7dfb0152ba4ab5c3100ae8bccc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd778d470c434bce007c74fbfe617d848') in 0.010511 seconds 
+  Import took 0.014665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 105.952804 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/cobra/268580__7h3-lark__rattle-snake.wav
+  artifactKey: Guid(e76fe9da4e44ec343ba9500b6529888a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/cobra/268580__7h3-lark__rattle-snake.wav using Guid(e76fe9da4e44ec343ba9500b6529888a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69d132b7d265a30b2d0ace82d28a45b3') in 0.012598 seconds 
+  Import took 0.017911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/cobra/540162__schreibsel__snake-hissing.mp3
+  artifactKey: Guid(3add7b46c7e75454bbb3e0281cebf596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/cobra/540162__schreibsel__snake-hissing.mp3 using Guid(3add7b46c7e75454bbb3e0281cebf596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a02dba959e2de82d229d7c14e99530db') in 0.015662 seconds 
+  Import took 0.019557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/cobra/cobra.wav
+  artifactKey: Guid(22d86e06417dd4e48b996a8fc4972f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/cobra/cobra.wav using Guid(22d86e06417dd4e48b996a8fc4972f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb5ce4c2b19f56703f0ac3af623ca958') in 0.010781 seconds 
+  Import took 0.014915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.115367 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/cobra/268580__7h3-lark__rattle-snake 1.wav
+  artifactKey: Guid(8778182d1ff232e4e93369872d35aa7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/cobra/268580__7h3-lark__rattle-snake 1.wav using Guid(8778182d1ff232e4e93369872d35aa7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7f7de9f136568711a3f9b4fe39aea5c') in 0.013770 seconds 
+  Import took 0.018192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/cobra/cobra 1.wav
+  artifactKey: Guid(4bae58664bfbe2d4fb795556e73dcfb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/cobra/cobra 1.wav using Guid(4bae58664bfbe2d4fb795556e73dcfb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cdab5ccba1dcc1c35cceb59cc5bfc04') in 0.084947 seconds 
+  Import took 0.088901 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/cobra/540162__schreibsel__snake-hissing 1.mp3
+  artifactKey: Guid(90a6ffc88cd7b8a4e9a941ddd6f3267c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/cobra/540162__schreibsel__snake-hissing 1.mp3 using Guid(90a6ffc88cd7b8a4e9a941ddd6f3267c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7749168630de1708e0d587971fd497b1') in 0.053137 seconds 
+  Import took 0.068162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/cobra/540162__schreibsel__snake-hissing.wav
+  artifactKey: Guid(af19d6f782e22de48949aba445b42926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/cobra/540162__schreibsel__snake-hissing.wav using Guid(af19d6f782e22de48949aba445b42926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '398c7cf61fb74bf32ef158140e3218e5') in 0.019753 seconds 
+  Import took 0.023741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.244757 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/monstro/rosnado 1.wav
+  artifactKey: Guid(717063d05d1fae14a9fafbce20b8cc10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/monstro/rosnado 1.wav using Guid(717063d05d1fae14a9fafbce20b8cc10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '975fb48d244a9ccf31cde7c9bbd1bcbd') in 0.064465 seconds 
+  Import took 0.069390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.429021 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/passaro/515909__lucasduff__monster-bird.mp3
+  artifactKey: Guid(785da9b62d5576248a75a31de1b4b921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/passaro/515909__lucasduff__monster-bird.mp3 using Guid(785da9b62d5576248a75a31de1b4b921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '444c0ada9801cf026960e17ea3e0be93') in 0.009825 seconds 
+  Import took 0.013998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Souns n Musics/Sounds/inimigos/passaro/passaro.wav
+  artifactKey: Guid(e3fe94158b7ee8f4c81ad27aea94aca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/inimigos/passaro/passaro.wav using Guid(e3fe94158b7ee8f4c81ad27aea94aca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '834f38bf77c97e5e1034e7e7f4874a85') in 0.010388 seconds 
+  Import took 0.014254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 116.971730 seconds.
+  path: Assets/Souns n Musics/Sounds/hud
+  artifactKey: Guid(19efbcdbe2a6b5f49a208450d4576c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/hud using Guid(19efbcdbe2a6b5f49a208450d4576c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faa4ad260569fd83d4713d49d6a146ba') in 0.025337 seconds 
+  Import took 0.031000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032037 seconds.
+  path: Assets/Souns n Musics/Sounds/hud/141121__eternitys__interface1.wav
+  artifactKey: Guid(4c30b7e3237dbe24aacf004fb9308036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/hud/141121__eternitys__interface1.wav using Guid(4c30b7e3237dbe24aacf004fb9308036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4dd18a912855aa6cb8c1be5065121d5') in 0.032005 seconds 
+  Import took 0.036277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Souns n Musics/Sounds/hud/511418__sky-motion__data-reveal-sound.wav
+  artifactKey: Guid(2561bbf14b5aef8429a7ac97b73c1916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/hud/511418__sky-motion__data-reveal-sound.wav using Guid(2561bbf14b5aef8429a7ac97b73c1916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e392a56da5306c704197f98d1003fd') in 0.029256 seconds 
+  Import took 0.033066 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Souns n Musics/Sounds/hud/518850__mrickey13__item-equip.mp3
+  artifactKey: Guid(b3c3a14308808f042aa933b0378314bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/hud/518850__mrickey13__item-equip.mp3 using Guid(b3c3a14308808f042aa933b0378314bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '408b17d97b94460848a4e33fb4db56ba') in 0.010163 seconds 
+  Import took 0.021973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Souns n Musics/Sounds/hud/545477__ienba__pop-up.wav
+  artifactKey: Guid(fa9fa68cbc5503044b6ab337540658e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/hud/545477__ienba__pop-up.wav using Guid(fa9fa68cbc5503044b6ab337540658e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ec3f2a5582b71aa7b3bac287827308c') in 0.010100 seconds 
+  Import took 0.014109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Souns n Musics/Sounds/hud/321083__benjaminnelan__wooden-click.wav
+  artifactKey: Guid(7d3a92b412c195d4c8dccfb6cab0d978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/hud/321083__benjaminnelan__wooden-click.wav using Guid(7d3a92b412c195d4c8dccfb6cab0d978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '414d7aa61dc84d51b54535bb80f633db') in 0.010217 seconds 
+  Import took 0.014258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Souns n Musics/Sounds/hud/dialogo loop.wav
+  artifactKey: Guid(16eaa23191473c144a2f92b5a2998525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/hud/dialogo loop.wav using Guid(16eaa23191473c144a2f92b5a2998525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f08879ce742f68b746bd733b17a4801') in 0.030153 seconds 
+  Import took 0.054234 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000668 seconds.
+  path: Assets/Souns n Musics/Sounds/hud/517717__zovipoland__plum-interface-sound.wav
+  artifactKey: Guid(9ad99d73438aa1b4098a6e9baeac8147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/hud/517717__zovipoland__plum-interface-sound.wav using Guid(9ad99d73438aa1b4098a6e9baeac8147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '287f247209b03c647cc90e4e6f059ba5') in 0.013514 seconds 
+  Import took 0.021095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Souns n Musics/Sounds/hud/278967__deleted-user-4798915__sfx-clicking.wav
+  artifactKey: Guid(ee6037c90a39e274db3ca3551628da26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/hud/278967__deleted-user-4798915__sfx-clicking.wav using Guid(ee6037c90a39e274db3ca3551628da26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31dde9fb6b454ed345078d5bb7a0e5f0') in 0.009509 seconds 
+  Import took 0.013534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Souns n Musics/Sounds/hud/350883__elmasmalo1__interface-dialogue-typing-soundfx.wav
+  artifactKey: Guid(6bc5ed3395a52b34ebbbe0d49b15bc64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/hud/350883__elmasmalo1__interface-dialogue-typing-soundfx.wav using Guid(6bc5ed3395a52b34ebbbe0d49b15bc64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6c0ddf682c3f0079426f3599565af80') in 0.009980 seconds 
+  Import took 0.014052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Souns n Musics/Sounds/hud/493551__original-sound__user-interface-clicks-and-buttons-1.wav
+  artifactKey: Guid(5e586315dcbfe5049b729e7a75886afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/hud/493551__original-sound__user-interface-clicks-and-buttons-1.wav using Guid(5e586315dcbfe5049b729e7a75886afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f1614df286194f05d09c3e81290df9a') in 0.010138 seconds 
+  Import took 0.014083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Souns n Musics/Sounds/hud/dialogo.wav
+  artifactKey: Guid(fe7df6f3c80072c4191abde3757e743b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/hud/dialogo.wav using Guid(fe7df6f3c80072c4191abde3757e743b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f90f196d86e0e9f2f1ec33f32b74b5d2') in 0.012551 seconds 
+  Import took 0.016609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 62.793324 seconds.
+  path: Assets/Souns n Musics/Sounds/itens
+  artifactKey: Guid(b7c52cc740643154ea4078c0266db726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/itens using Guid(b7c52cc740643154ea4078c0266db726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5ce9a986f1b1d812942a03ad3ee5bd9') in 0.005551 seconds 
+  Import took 0.010322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.075627 seconds.
+  path: Assets/Souns n Musics/Sounds/itens/41595__noisecollector__phonesequence.wav
+  artifactKey: Guid(871e23adb144b5a44a3bc5d38d969b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/itens/41595__noisecollector__phonesequence.wav using Guid(871e23adb144b5a44a3bc5d38d969b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e2ccec3763161780203adc73e07960c') in 0.011840 seconds 
+  Import took 0.016165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Souns n Musics/Sounds/itens/467604__triqystudio__openbag.wav
+  artifactKey: Guid(bfed6be52a9f3ca4fbc5c14f266cfefb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/itens/467604__triqystudio__openbag.wav using Guid(bfed6be52a9f3ca4fbc5c14f266cfefb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '863fb2d5c4c96210b80653165890a856') in 0.013640 seconds 
+  Import took 0.017590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Souns n Musics/Sounds/itens/mochila.wav
+  artifactKey: Guid(d6b9f84876f0a3e439b2e4606194b087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/itens/mochila.wav using Guid(d6b9f84876f0a3e439b2e4606194b087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31f4ee3b67340b1fdfcd12b5644a3f0b') in 0.059396 seconds 
+  Import took 0.063348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Souns n Musics/Sounds/itens/61946__noisecollector__radio2.wav
+  artifactKey: Guid(b8c84de303ed6274c981659a778f7388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/itens/61946__noisecollector__radio2.wav using Guid(b8c84de303ed6274c981659a778f7388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f08ccd451e1ce35cbf40e36fe733eaeb') in 0.060022 seconds 
+  Import took 0.064666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Souns n Musics/Sounds/itens/548156__simong1006__bedside-lamp-switch-on-off.wav
+  artifactKey: Guid(03ad95990a24c9647a0d7e1601bf1755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/itens/548156__simong1006__bedside-lamp-switch-on-off.wav using Guid(03ad95990a24c9647a0d7e1601bf1755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4091202a475d217f858fc1b70058e76') in 0.060768 seconds 
+  Import took 0.064993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Souns n Musics/Sounds/itens/84765__bsumusictech__beep.wav
+  artifactKey: Guid(cb5c3ecd4b262c143a740faef590a86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/itens/84765__bsumusictech__beep.wav using Guid(cb5c3ecd4b262c143a740faef590a86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69ecdbabbbae1a425bf64b857149d7b9') in 0.056717 seconds 
+  Import took 0.061127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Souns n Musics/Sounds/itens/516739__imafoley__oil-lantern-rattle.wav
+  artifactKey: Guid(ce4ff65ba58e9fa4e924a1ba7af0f471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/itens/516739__imafoley__oil-lantern-rattle.wav using Guid(ce4ff65ba58e9fa4e924a1ba7af0f471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af6a1c275fbdea0ca9fe8749f824bfd4') in 0.037791 seconds 
+  Import took 0.042006 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Souns n Musics/Sounds/itens/mochila lenta.wav
+  artifactKey: Guid(65829d66835e8a04c89196cff39654de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/itens/mochila lenta.wav using Guid(65829d66835e8a04c89196cff39654de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b4fb22a001b7ffef4bf07f21100c3b9') in 0.009931 seconds 
+  Import took 0.013766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Souns n Musics/Sounds/itens/138049__pakasit21__typewriter.mp3
+  artifactKey: Guid(691c3e8939f767c45b7a760927dbfb9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/itens/138049__pakasit21__typewriter.mp3 using Guid(691c3e8939f767c45b7a760927dbfb9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36a0ed610bf5bbbaf4aff4e0831151e8') in 0.010384 seconds 
+  Import took 0.014265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Souns n Musics/Sounds/itens/434568__shanealf__radio-1.ogg
+  artifactKey: Guid(4d741df3dbeb09640a98def04fe88ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/itens/434568__shanealf__radio-1.ogg using Guid(4d741df3dbeb09640a98def04fe88ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21e7b4b148e8a7480811a69d05989a43') in 0.011218 seconds 
+  Import took 0.015223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Souns n Musics/Sounds/itens/434568__shanealf__radio-1.wav
+  artifactKey: Guid(3852d65fb7830f34d8cb1d40bcabe081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/itens/434568__shanealf__radio-1.wav using Guid(3852d65fb7830f34d8cb1d40bcabe081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac4a24bc873a5a54f7c93c41dc51b51d') in 0.010138 seconds 
+  Import took 0.014334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Souns n Musics/Sounds/itens/562292__colorscrimsontears__heal-rpg.wav
+  artifactKey: Guid(2177664fa36b76945b7ce9d71e26bd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/itens/562292__colorscrimsontears__heal-rpg.wav using Guid(2177664fa36b76945b7ce9d71e26bd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa92a58718a0840547693809db020a9') in 0.031570 seconds 
+  Import took 0.035577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000555 seconds.
+  path: Assets/Souns n Musics/Sounds/itens/364688__alegemaate__electronic-door-opening.wav
+  artifactKey: Guid(2c9aaa384e9dae14d956ed4de3ca0db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/itens/364688__alegemaate__electronic-door-opening.wav using Guid(2c9aaa384e9dae14d956ed4de3ca0db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3fade2a3ba7e551251de7df092b0171') in 0.010386 seconds 
+  Import took 0.014335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 76.080779 seconds.
+  path: Assets/Souns n Musics/Sounds/itens/485711__applesandpears50__camera-shutter.m4a
+  artifactKey: Guid(fd21bd38b632bba4a960dc79e4262706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/itens/485711__applesandpears50__camera-shutter.m4a using Guid(fd21bd38b632bba4a960dc79e4262706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e24599beba5536b72b5d86eede88e716') in 0.008249 seconds 
+  Import took 0.013835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.522300 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 2
+  artifactKey: Guid(c51b8329eefa926498c3f886a725db9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 2 using Guid(c51b8329eefa926498c3f886a725db9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0e79a7aa57adcf34ee7ab70f91951ce') in 0.006720 seconds 
+  Import took 0.011746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048916 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 2/27975__tim-kahn__steam.flac
+  artifactKey: Guid(4761b6d8546993545b507866604aed6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 2/27975__tim-kahn__steam.flac using Guid(4761b6d8546993545b507866604aed6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb6a8956baa0a3e8c6526a35d223e50a') in 0.012227 seconds 
+  Import took 0.016298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 2/168991__janusnovak__designa-factory-sounds0008.wav
+  artifactKey: Guid(a195b05d41c92d44eaa19d0bc0fb761a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 2/168991__janusnovak__designa-factory-sounds0008.wav using Guid(a195b05d41c92d44eaa19d0bc0fb761a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52e598276e9971863982823c955a0a29') in 0.010633 seconds 
+  Import took 0.014568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 2/46488__phreaksaccount__compactor3.ogg
+  artifactKey: Guid(3801492449b8f414fb00215357ed5db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 2/46488__phreaksaccount__compactor3.ogg using Guid(3801492449b8f414fb00215357ed5db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac69c7d534091a665d6fafb85d6b4f3') in 0.009762 seconds 
+  Import took 0.013642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 2/259501__ikayuka__industry.mp3
+  artifactKey: Guid(1c5c859f90d149543ad2cfb53c33b270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 2/259501__ikayuka__industry.mp3 using Guid(1c5c859f90d149543ad2cfb53c33b270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47fc32ae3c36ee7718707e81b9e92cea') in 0.011350 seconds 
+  Import took 0.015170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 2/580634__szegvari__abadoned-steampunk-house-dark-atmosphere.wav
+  artifactKey: Guid(d6fcb560559b0be42b20f6657135ea2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 2/580634__szegvari__abadoned-steampunk-house-dark-atmosphere.wav using Guid(d6fcb560559b0be42b20f6657135ea2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9274f3e22100983237403f2d02daf6') in 0.010070 seconds 
+  Import took 0.013996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 2/376610__viktorfox__industrial-drums-2-115bpm.wav
+  artifactKey: Guid(868c93e9eacc3b746800996c92504276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 2/376610__viktorfox__industrial-drums-2-115bpm.wav using Guid(868c93e9eacc3b746800996c92504276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f04d3b44e2de4750c8e16fc7922f4c1f') in 0.010963 seconds 
+  Import took 0.014913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 2/46487__phreaksaccount__compactor2.ogg
+  artifactKey: Guid(c1f9aa5f543217340885f094c7d14a9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 2/46487__phreaksaccount__compactor2.ogg using Guid(c1f9aa5f543217340885f094c7d14a9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '185f24975aa9c787d2dff99ebae3a76e') in 0.010094 seconds 
+  Import took 0.014042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 2/322074__edemson86__industrialfrosty.ogg
+  artifactKey: Guid(b010b1bd86acbb94b9b965226c1d8a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 2/322074__edemson86__industrialfrosty.ogg using Guid(b010b1bd86acbb94b9b965226c1d8a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41b2ac15d3d2dc9f74b1ab5968ece703') in 0.011167 seconds 
+  Import took 0.015147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 2/125211__keithpeter__steam-train-leaving-moor-st-station.wav
+  artifactKey: Guid(a0eec9329951bc74db51a64eebc92d0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 2/125211__keithpeter__steam-train-leaving-moor-st-station.wav using Guid(a0eec9329951bc74db51a64eebc92d0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c679b4a75c2fbd6fddbb6a9513f5abf') in 0.009879 seconds 
+  Import took 0.013735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 2/351525__drfx__pendulum-torture-device-1.wav
+  artifactKey: Guid(24cc8a1e12dfbbb4fb66b1363c75fec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 2/351525__drfx__pendulum-torture-device-1.wav using Guid(24cc8a1e12dfbbb4fb66b1363c75fec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '700a50da9e2d449104e0458d0f79defb') in 0.009716 seconds 
+  Import took 0.013770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 2/580632__szegvari__machine-steampunk-relax-chill-ambient.wav
+  artifactKey: Guid(815862b870dc7ee4892ad4a2b2131664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 2/580632__szegvari__machine-steampunk-relax-chill-ambient.wav using Guid(815862b870dc7ee4892ad4a2b2131664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '913ff71e5507c9b4322358f1a76d4759') in 0.010445 seconds 
+  Import took 0.014439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 2/46486__phreaksaccount__compactor1.ogg
+  artifactKey: Guid(400428523a7e59c439a936955348a69e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 2/46486__phreaksaccount__compactor1.ogg using Guid(400428523a7e59c439a936955348a69e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96d950e855dedaa0de327cf57cf98620') in 0.011517 seconds 
+  Import took 0.015439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 2/66364__reinsamba__1243-pressure-cooker.wav
+  artifactKey: Guid(a4cc622bcc45f51439f28167f9414644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 2/66364__reinsamba__1243-pressure-cooker.wav using Guid(a4cc622bcc45f51439f28167f9414644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8c1f1cb08116b141a9181de240a6a40') in 0.009720 seconds 
+  Import took 0.013569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 2/219455__qubodup__steampunk-crossbow-shot-3 (1).flac
+  artifactKey: Guid(0e983301e8f79534ba92a076c9cb3f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 2/219455__qubodup__steampunk-crossbow-shot-3 (1).flac using Guid(0e983301e8f79534ba92a076c9cb3f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4603fc1a5bef5e0703c0efe7566cc9a9') in 0.012056 seconds 
+  Import took 0.016105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Souns n Musics/Sounds/fase 2/219455__qubodup__steampunk-crossbow-shot-3.flac
+  artifactKey: Guid(ea4e339682dd7824a91cca907274130f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Souns n Musics/Sounds/fase 2/219455__qubodup__steampunk-crossbow-shot-3.flac using Guid(ea4e339682dd7824a91cca907274130f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3da154539f9e04e56a0a12441be98ac4') in 0.010073 seconds 
+  Import took 0.013991 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
