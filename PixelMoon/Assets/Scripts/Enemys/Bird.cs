@@ -13,12 +13,6 @@ public class Bird : MonoBehaviour
         pl = FindObjectOfType<Player>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))

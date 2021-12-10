@@ -4,29 +4,33 @@ using UnityEngine;
 
 public class Closet : MonoBehaviour
 {
-    private Player pl;
+    private Player pl = null;
+    private SpeedHandler sh = null;
     private bool inRange = false;
+    private Transform tf = null;
 
     // Start is called before the first frame update
     void Start()
     {
+        tf = GetComponent<Transform>();
         pl = FindObjectOfType<Player>();
+        sh = pl.GetComponent<SpeedHandler>();
     }
 
     private void Update()
     {
         if (pl.hidden)
         {
-            pl.transform.position = transform.position;
+            sh.cantMove = true;
         }
-        else pl.transform.position = pl.transform.position;
+        else sh.cantMove = false;
 
         if (inRange)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
 
-                pl.transform.position = transform.position;
+                pl.transform.position = tf.position;
                 pl.hidden = true;
             }
             else if (Input.GetKeyDown(KeyCode.F))

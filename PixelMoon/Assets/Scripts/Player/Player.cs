@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public float speed = 0f;
     public float crouchSpeed = 0f;
     public float jumpRange = 0.4f;
-    [SerializeField] private float jumpForce = 0f;
+    public float jumpForce = 0f;
     [SerializeField] private float timer = 0f;
     [SerializeField] private LayerMask mask;
     private CircleCollider2D cc = null;
@@ -44,6 +44,7 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject medicKitPrefab = null;
     [SerializeField] private GameObject armPrefab;
     [SerializeField] private Inventory inv;
+    [SerializeField] private SpriteRenderer armSPR = null;
 
     // Start is called before the first frame update
     void Awake()
@@ -52,7 +53,7 @@ public class Player : MonoBehaviour
         cc = GetComponent<CircleCollider2D>();
         sr = GetComponent<SpriteRenderer>();
         st.Add(FindObjectOfType<Stairs>());
-
+        
         crouchSpeed = 500;
        
     }
@@ -318,13 +319,14 @@ public class Player : MonoBehaviour
     {
         if (hidden)
         {
-            GetComponent<SpriteRenderer>().sortingOrder = 4;
+            sr.sortingOrder = 4;
+            armSPR.sortingOrder = 3;
 
         }
         else if (!hidden)
         {
-            
-            GetComponent<SpriteRenderer>().sortingOrder = 10;
+            armSPR.sortingOrder = 9;
+            sr.sortingOrder = 10;
         }
     }
 
